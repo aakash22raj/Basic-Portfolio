@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+<style>
+   .text{
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    width:100px;
+    height:30px;
+    color:darkgreen; 
+    font-size:80px;
+   }
+   .name{
+    color:RED;
+    font-size:50px;
+    position:absolute;
+    top: 240px;
+    left: 200px; 
+   }
+   .work{
+    font-size: 35px;
+    color:navy;
+    position:absolute;
+    top: 300px;
+    left: 200px; 
+   }
+   .write{
+    font-size: 25px;
+    position:absolute;
+    top: 340px;
+    left: 200px; 
+   }
+   .mancolor{
+    background-color: chartreuse;
+    background-size:contain;
+    background-image: url("D:/Picture/man7.png");
+    background-repeat: no-repeat;
+    border-radius:100% ;
+    border:2px solid chartreuse;
+    height:69vh;
+    width: 60vh;
+    float: right;
+    position: absolute;
+    top:140px;
+    left:750px;
+   }
+   .blog{
+   background-color:blueviolet;
+   border: 1px solid green;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   cursor: pointer;
+   position:absolute;
+   top: 470px;
+   left: 200px;
+   border-radius: 15px;
+   }
+   .blog:hover{
+    background-color:rgb(28, 174, 125);
+   } 
+   .home{
+   background-color:black;
+   z-index:16;
+   color: white;
+   padding: 10px 10px;
+   font-size: 20px;
+   position:fixed;
+   top: 55px;
+   /* left: 600px; */
+   left: 810px;
+   border-radius: 10px;
+   }
+   .home:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   /*.about{
+   background-color:black;
+   color: white;
+   padding: 10px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   cursor: pointer;
+   position:fixed;
+   top: 55px;
+   left: 710px;
+   border-radius: 10px;
+   }*/
+   .about:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   .gallery{
+   background-color:black;
+   z-index:16;
+   color: white;
+   padding: 10px 10px;
+   font-size: 20px;
+   position:fixed;
+   top: 55px;
+   /* left: 940px; */
+   left: 920px;
+   border-radius: 10px;
+   }
+   .gallery:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   /*.skills{
+   background-color:black;
+   color: white;
+   padding: 10px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   cursor: pointer;
+   position:fixed;
+   top: 55px;
+   left: 940px;
+   border-radius: 10px;
+   }*/
+   .skills:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   .blog1{
+   background-color:black;
+   color: white;
+   z-index:16;
+   padding: 10px 10px;
+   font-size: 20px;
+   position:fixed;
+   top: 55px;
+   left: 1050px;
+   border-radius: 10px;
+   }
+   .blog1:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   .contact{
+   background-color:black;
+   z-index:16;
+   color: white;
+   padding: 10px 10px;
+   font-size: 20px;
+   position:fixed;
+   top: 55px;
+   left: 1150px;
+   border-radius: 10px;
+   }
+   .contact:hover{
+    background-color:rgb(28, 174, 125);
+   }
+   .color{
+    background-color: black;
+    background-size:contain;
+    background-image: url("D:/Picture/logo4.png");
+    background-repeat: no-repeat;
+    width:100%;
+    height:100px;
+    float: left;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    z-index:13;
+   }
+   .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 9px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 1590px;
+    left: 935px;
+}
+.fa-twitter {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 1590px;
+    left: 995px;
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 1590px;
+    left: 1055px;
+}
+.fa-reddit {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 1590px;
+    left: 1115px;
+}
+.i2{
+    margin:0px 0px;
+    position: absolute;
+    top: 620px;
+    left: 0px;
+}
+.i4{
+    margin:0px 0px;
+    position: absolute;
+    top: 1500px;
+    left: 0px;
+}
+.follow{
+    color:white;
+    font-size:13px;
+    position:absolute;
+    top: 1520px;
+    left: 1000px; 
+}
+.help1{
+    color:white;
+    font-size:25px;
+    position:absolute;
+    top: 1520px;
+    left: 560px; 
+}
+.contact-us{
+    color:white;
+    font-size:18px;
+    position:absolute;
+    top: 1580px;
+    left: 560px; 
+}
+.email{
+    color:white;
+    font-size:18px;
+    position:absolute;
+    top: 1620px;
+    left: 560px; 
+}
+.learn{
+    color:white;
+    font-size:25px;
+    position:absolute;
+    top: 1520px;
+    left: 150px; 
+}
+.te{
+    color:white;
+    font-size:9px;
+    position:absolute;
+    top: 1580px;
+    left: 150px;  
+}
+.about-us{
+    color:red;
+    font-size:40px;
+    position:absolute;
+    top: 1120px;
+    left: 550px;  
+    font-family: 'Arizonia';
+}
+.thought{
+    color:black;
+    font-size:10px;
+    position:absolute;
+    top: 1250px;
+    left: 100px;  
+}
+.box1{
+  /* background-color:none; */
+  width: 100px;
+  height: 200px;
+  /* border: 15px solid green; */
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  top: 750px;
+  left: 100px;
+  z-index: 10;
+  box-shadow: 7px 8px 15px 8px;
+}
+.box2{
+  /* background-color:none; */
+  width: 100px;
+  height: 200px;
+  /* border: 15px solid green; */
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  top: 750px;
+  left:510px;
+  z-index: 10;
+  box-shadow: 7px 8px 15px 8px;
+}
+.box3{
+  /* background-color:red; */
+  width: 100px;
+  height: 200px;
+  /* border: 15px solid green; */
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  top: 750px;
+  right: 100px;
+  z-index: 10;
+  box-shadow: 7px 8px 15px 8px;
+}
+title{
+    position: absolute;
+    bottom: 6px;
+    left: 0px;
+}
+.achieve{
+    color:red;
+    font-size:50px;
+    position:absolute;
+    top: 620px;
+    left: 480px; 
+    z-index: 10;
+    font-family: 'Arizonia';
+}
+.box-text{
+    color:rgb(5, 1, 1);
+    font-size:20px;
+    /* position:absolute; */
+    /* top: 620px; */
+    /* left: 480px;  */
+    /* z-index: 10; */
+    /* font-family: 'Arizonia'; */
+}
+</style>
+</head>
+<body>
+    <h1 class="achieve">Achievements</h1>
+    <div class="box1">
+        <p class="box-text">
+            Write some think
+        </p>
+        <h1 class="title">
+            
+        </h1>
+    </div>
+    <div class="box2">
+        <p class="box-text">
+            Write some think
+        </p>
+        <h1 class="title">
+            
+        </h1>
+    </div>
+    <div class="box3">
+        <p class="box-text">
+            Write some think
+        </p>
+        <h1 class="title">
+            
+        </h1>
+    </div>
+    <img class="i2" width="100%" height="490px" src="D:/Picture/nature3.jpg" alt="computer">
+    <img class="i3" width="100%" height="1700px" src="D:/Picture/white.png" alt="computer">
+    <img class="i4" width="100%" height="300px" src="D:/Picture/black4.png" alt="computer">
+    <div class="follow">
+        <h1> Follow us </h1>
+    </div>
+    <div class="mancolor"></div>
+    <div class="color"></div>
+    <h1 class="text">Hi,I'M</h1>   
+    <h1 class="name">JOHNNY DEPP</h1>  
+    <h1 class="work">Full Stack Develpor</h1>
+    <p class="write">Behind the word mountains,far from countris<br> valalia
+        and conson antia and, there seed
+        far from <br>the counties there seed behind the word........................
+    </p>
+    <h1 class="help1">Help</h1>
+    <h1 class="contact-us">+91-9305595064</h1>
+    <h1 class="email">aakashrajgic@gmail.com</h1>
+    <h1 class="learn">Learn</h1>
+    <div class="te">
+        <h1>Write blog<br><br>Read blogs<br><br>Pick Topics to write blog</h1>
+    </div>
+    <h1 class="about-us">About us</h1>
+    <div class="thought">
+        <h1>This website is for mentoring and learn purpose We are not changing 
+            for any kind of learning related things and supports new developer
+             to purse there goal in IT world.
+        </h1>
+    </div>
+        <butten class="blog"onclick="window.location.href='D:/Html File/Project-1/blog.html';">
+            Blog
+        </butten>
+    <div class="button">
+        <butten class="home" onclick="window.location.href='D:/Html File/Project-1/portfolio1.html';">
+            Home
+        </butten>
+        <!-- <butten class="about" onclick="window.location.href='  ';"> -->
+            <!-- About -->
+        <!-- </butten> -->
+        <butten class="gallery" onclick="window.location.href='D:/Html File/Project-1/gallery.html';">
+            Gallery
+        </butten>
+        <!-- <butten class="skills"> -->
+            <!-- Skills -->
+        <!-- </butten> -->
+        <butten class="blog1"onclick="window.location.href='D:/Html File/Project-1/blog.html';">
+            Blog
+        </butten>
+        <butten class="contact"onclick="window.location.href='D:/Html File/Project-1/contect1.html';">
+            Contact
+        </butte>
+    </div>
+      <a href="https://twitter.com/aakash22raj" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/aakash22raj/" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/aakash22raj" class="fa fa-instagram"></a>
+      <a href="https://discord.gg/MQVJvkNpyR" class="fa fa-reddit"></a>
+</body>
+</html>
